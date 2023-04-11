@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="english">
 
 <head>
     <title>Departement Assignment</title>
-    <link rel="stylesheet" href="DepartementAssignment.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#99bbff">
-    <nav>
-        <ul>
-            <li><a href="main page.html">Home</a></li>
-            <li><a href= "MyTutorial Page.html">Tutorial</a></li>
-            <li><a href="Search.html">Search</a></li>
-            <li><a href="view.html">view</a></li>
-            <li><a href="Departement-Assignment-Page.html">Departement_Assignment</a></li>
-            <li><a href="Update.html">Update</a></li>
-            <li><a href="Add Student.html">Add_Student</a></li>
-            <a href="main page.html" class="previous">&laquo; Back</a>
-        </ul>
-    </nav>
-
-    <div align="right">
-        <a href="MyTutorial Page.html">
-           
-        </a>
+<body>
+    <div class="container">    
+        <div class="box head">Departement Assignment Page</div>
+        <div class="box sl">
+            <nav class="responsiveSP">
+                <ul>
+                    <li><a href="main page.html">Home</a></li>
+                    <li><a href= "MyTutorial Page.html">Tutorial</a></li>
+                    <li><a href= "login.html">Login</a></li>
+                    <li><a href="Search.html">Search</a></li>
+                    <li><a href="view.html">view</a></li>
+                    <li><a href="Departement-Assignment-Page.html">Departement_Assignment</a></li>
+                    <li><a href="Updata.html">Update</a></li>
+                    <li><a href="Add Student.html">Add_Student</a></li>
+                    <li><a href="delete.html">Delete Student</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="box cont">
+            <br>
+            <div align="right"><a href="MyTutorial Page.html"></a></div>
+            <div align="left"><a href="Search.html"></a></div>
+            <h1>Departement Assignment</h1>
+            <br>
+            <form >
+                <fieldset>
+                    <legend>student Information</legend>
+                    <p>student ID: <input type = "text" name = "ID" /></p> 
+                    <p> First name: <input type = "text" name = "fname" /></p>
+                    <form method="post" Align="left">
+                    <h3>Departement Choise:
+                    <select name="Departement">
+                        <option>Departement</option>
+                        <option>CS</option>
+                        <option>IT</option>
+                        <option>IS</option>
+                        <option>AI</option>
+                        <option>DS</option>
+                        <br>
+                        <input id="submit_button" type="submit" value="Submit"></a>
+                    </select>
+                    </h3>
+                </fieldset>
+            </form>
+        </div>
     </div>
-
-    <div align="left">
-        <a href="Search.html">
-           
-        </a>
-    </div>
-
-    <h1>Departement Assignment</h1>
-    <br>
-
-    <form >
-        <fieldset>
-        <legend>student Details</legend>
-       <p>student ID: <input type = "text" name = "ID" /></p> 
-       <p> First name: <input type = "text" name = "fname" /></p>
-
-    <form method="post" Align="left">
-        <h3>Choose Departement:
-            <select name="Departement">
-                <option>Departement</option>
-                <option>CS</option>
-                <option>IT</option>
-                <option>IS</option>
-                <option>AI</option>
-                <option>DS</option>
-                <br>
-                <input id="submit_button" type="submit" value="Submit"></a>
-            </select>
-        </h3>
-    </fieldset>
-    </form>
-
 </body>
-
 </html>
