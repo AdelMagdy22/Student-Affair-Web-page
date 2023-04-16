@@ -4,6 +4,7 @@
 <head>
     <title>Add student</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Add.js"></script>
 </head>
 <body>
     <div class="container">    
@@ -28,41 +29,39 @@
             <form>
             <fieldset>
             <legend>Details For Each Student</legend>
-            <p>Student ID: <input type = "text" name = "ID" /></p> 
-            <p> First name: <input type = "text" name = "fname" /></p>
-            <p>Last name: <input type = "text" name = "lname" /></p>  
-            <p> Phone Number: <input type = "text" name = "phone" /></p>     
-            <p> email: <input type = "text" name = "email" /></p> 
-            <p>Level:</p>
-            <select>
-                <option> Choose </option>
-                <option> level 1 </option>
-                <option> level 2 </option>
-                <option> level 3 </option>
-                <option> level 4 </option>
-            </select> 
-            <p> GPA: <input type = "text" name = "GPA" /></p>  
-            <p> Date of birth: <input type = "date" name = "date" /></p>     
+            <p> <strong>Student ID:</strong> <input type = "text" autofocus name = "ID"/></p> 
+            <p> <strong>First name:</strong> <input type = "text"  autofocus  name = "fname" /></p>
+            <p> <strong>Last name:</strong> <input type = "text" autofocus name = "lname" /></p>  
+            <p> <strong>Phone Number:</strong> <input type = "text" autofocus name = "phone" /></p>     
+            <p> <strong>email:</strong> <input type = "text" autofocus name = "email" /></p> 
             <p>
-                Gender:
-                <input type = "radio" name = "Gender" value = "Male"> Male    
-                <input type = "radio" name = "Gender" value = "Female"> Female
-            </p>  
-            <p>Department:</p>
-            <select>
-                <option> Choise </option>
-                <option> DS </option>
-                <option> IS </option>
-                <option> CS </option>
-                <option> IT </option>
-                <option> AI </option>
-            </select> 
+                <strong>Level:</strong>
+                <input type="radio" name="Level" value="1">Level 1
+                <input type="radio" name="Level" value="2">Level 2
+                <input type="radio" name="Level" value="3">Level 3
+                <input type="radio" name="Level" value="4">Level 4
+            </p>
+            <p> <strong>GPA:</strong>  <input type = "text"  autofocus name = "GPA" /></p>  
+            <p> <strong>Date of birth:</strong> <input type = "date" autofocus name = "date" /></p>     
+            <p>
+                <strong>Gender:</strong>
+                <input type = "radio" name = "Gender" autofocus value = "Male"> Male    
+                <input type = "radio" name = "Gender" autofocus value = "Female"> Female
+            </p> 
             <p> 
-                Status:
+                <strong>Department:</strong> 
+                <input type="radio" name="Departement" value="CS">CS
+                <input type="radio" name="Departement" value="CS">AI
+                <input type="radio" name="Departement" value="CS">IT
+                <input type="radio" name="Departement" value="CS">DS
+                <input type="radio" name="Departement" value="CS">IS
+            </p>
+            <p> 
+                <strong>Status:</strong>
                 <input type = "radio" name = "Status" value = "active"> active    
                 <input type = "radio" name = "Status" value = "inactive"> inactive
             </p> 
-            <p><button value="Register">Add</button></p>             
+            <p><button id = "btn" class="slBtn" value="Register">Add</button></p>             
         </fieldset>
         </form>
         </div>
