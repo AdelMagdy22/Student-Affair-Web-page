@@ -1,68 +1,82 @@
-body{
+body {
     text-align: center;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     justify-items: center;
     align-items: center;
 }
-.centertable{
+
+.centertable {
     justify-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     height: 40%;
 }
+
 /* class container to make it grid */
-.container{
-    display:grid;
-    grid-auto-rows: minmax(52px,auto);
-    grid-template-areas: 
-    "head head head head head head"
-    "sl cont cont cont cont cont"
-    "sl cont cont cont cont cont"
-    "sl cont cont cont cont cont"
-    "sl cont cont cont cont cont"
-    "sl cont cont cont cont cont"
-    "foot foot foot foot foot foot";
+.container {
+    display: grid;
+    grid-auto-rows: minmax(52px, auto);
+    grid-template-areas:
+        "head head head head head head"
+        "sl cont cont cont cont cont"
+        "sl cont cont cont cont cont"
+        "sl cont cont cont cont cont"
+        "sl cont cont cont cont cont"
+        "sl cont cont cont cont cont"
+        "foot foot foot foot foot foot";
 }
-.box{
+
+.box {
     text-align: center;
 }
-.head{
+
+.head {
     display: grid;
     grid-area: head;
     background-color: #31365a;
     color: #f1f1f1;
     align-items: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    height: 60px;    
+    height: 60px;
     font-size: 30px;
 }
-.sl{
+
+.sl {
     grid-area: sl;
-    background-color: lightgray;
-    display: grid;
+    display: block;
+    margin-inline-start: 60%;
+    justify-items: center;
+    width: 95%;
+    height: auto;
 }
-.cont{
+
+.cont {
     grid-area: cont;
 }
-.footer{
+
+.footer {
     grid-area: foot;
 }
 
-.responsiveSP{
+.responsiveSP {
     background: rgb(5, 68, 104);
     position: fixed;
     left: 0;
@@ -70,9 +84,10 @@ table, th, td {
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.sl ul li a{
+
+.sl ul li a {
     display: block;
     padding: 13px 30px;
     border-bottom: 1px solid #10558d;
@@ -80,17 +95,20 @@ table, th, td {
     font-size: 16px;
     position: relative;
 }
+
 .sl ul li a:hover,
-.sl ul li a.active{
+.sl ul li a.active {
     color: #0c7db1;
-    background:white;
+    background: white;
     border-right: 2px solid rgb(5, 68, 104);
 }
+
 .sl ul li a:hover:before,
-.sl ul li a.active:before{
+.sl ul li a.active:before {
     display: block;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -107,16 +125,30 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid;
     display: inline;
-  }
-  
+}
+
 .btn:hover {
     box-shadow: inset 160px 0px 0px 0px rgb(192, 190, 172);
     cursor: pointer;
     color: rgb(51, 51, 53);
 }
 
-.content{
-    text-align: center;
-    background-color: white;
-    margin-inline-start: 218px;
+.slBtn {
+    width: 55px;
+    height: 30px;
+    color: rgb(192, 190, 172);
+    background-color: rgb(51, 51, 53);
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 rgb(0, 95, 87);
+    transition: ease-out 0.4s;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid;
+    display: inline;
+}
+
+.slBtn:hover {
+    box-shadow: inset 47px 0px 0px 0px rgb(192, 190, 172);
+    cursor: pointer;
+    color: rgb(51, 51, 53);
 }
