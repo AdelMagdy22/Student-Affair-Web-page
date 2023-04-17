@@ -4,6 +4,7 @@
 <head>
     <title>View Students</title>
     <link rel="stylesheet" href="style.css">
+    <script src="view.js"></script>
 </head>
 
 <body>
@@ -34,10 +35,10 @@
 
                 <form>
                     <label>Choose Active/InActive:</label>
-                    <select>
-                        <option>All Students</option>
-                        <option>Active Students</option>
-                        <option>InActive Students</option>
+                    <select id="selectStatue">
+                        <option name="type" type="selectStatue" value="All Students">All Students</option>
+                        <option name="type" type="select" value="Active">Active Students</option>
+                        <option name="type" type="select" value="InActive">InActive Students</option>
                     </select>
 
 
@@ -47,7 +48,7 @@
                     <br> <br>
                     <div>
                         <table>
-                            <tr>
+                            <thead>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>ID</th>
@@ -55,14 +56,14 @@
                                 <th>GPA</th>
                                 <th>Gender</th>
                                 <th>Date of Birth</th>
-                                <th>Mobile Phone</th>
+                                <th>Mobile Phone</th>hd
                                 <th>Status</th>
-                                <!--Active/InActive-->
-                                <!--can be changed here-->
+                                <!-- Active/InActive -->
+                                <!-- can be changed here -->
                                 <th>Departement</th>
-                            </tr>
+                            </thead>
 
-                            <tr>
+                            <tbody>
                                 <td>Esraa</td>
                                 <td>hamdy</td>
                                 <td>20200114</td>
@@ -73,8 +74,8 @@
                                 <td>0115937528</td>
                                 <td>active</td>
                                 <td>CS</td>
-                            </tr>
-                            <tr>
+                            </tbody>
+                            <tbody>
                                 <td>marwa</td>
                                 <td>ahmed</td>
                                 <td>20201054</td>
@@ -84,10 +85,10 @@
                                 <td>8/7/2001</td>
                                 <td>0115935871</td>
                                 <td>active</td>
-                                <td>CS</td>
-                            </tr>
+                                <td>AI</td>
+                            </tbody>
 
-                            <tr>
+                            <tbody>
                                 <td>omima</td>
                                 <td>abdo</td>
                                 <td>20208912</td>
@@ -98,8 +99,8 @@
                                 <td>012559355</td>
                                 <td>inactive</td>
                                 <td>CS</td>
-                            </tr>
-                            <tr>
+                            </tbody>
+                            <tbody>
                                 <td>mina</td>
                                 <td>maged</td>
                                 <td>20210420</td>
@@ -110,7 +111,7 @@
                                 <td>01140240229</td>
                                 <td>active</td>
                                 <td>-</td>
-                            </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
