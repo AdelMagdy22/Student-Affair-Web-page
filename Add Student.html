@@ -29,39 +29,39 @@
             <form>
             <fieldset>
             <legend>Details For Each Student</legend>
-            <p> <strong>Student ID:</strong> <input type = "text" autofocus name = "ID"/></p> 
-            <p> <strong>First name:</strong> <input type = "text"  autofocus  name = "fname" /></p>
-            <p> <strong>Last name:</strong> <input type = "text" autofocus name = "lname" /></p>  
-            <p> <strong>Phone Number:</strong> <input type = "text" autofocus name = "phone" /></p>     
-            <p> <strong>email:</strong> <input type = "text" autofocus name = "email" /></p> 
+            <p> <strong>Student ID:</strong> <input type = "text" id = "ID"/></p> 
+            <p> <strong>First name:</strong> <input type = "text"  id = "fname" /></p>
+            <p> <strong>Last name:</strong> <input type = "text" id = "lname" /></p>  
+            <p> <strong>Phone Number:</strong> <input type = "text" id = "phone" /></p>     
+            <p> <strong>email:</strong> <input type = "text" id = "email" /></p> 
             <p>
                 <strong>Level:</strong>
-                <input type="radio" name="Level" value="1">Level 1
-                <input type="radio" name="Level" value="2">Level 2
-                <input type="radio" name="Level" value="3">Level 3
-                <input type="radio" name="Level" value="4">Level 4
+                <input type="radio" name ="Level" value="1">Level 1
+                <input type="radio" name ="Level" value="2">Level 2
+                <input type="radio" name ="Level" value="3">Level 3
+                <input type="radio" name ="Level" value="4">Level 4
             </p>
-            <p> <strong>GPA:</strong>  <input type = "text"  autofocus name = "GPA" /></p>  
-            <p> <strong>Date of birth:</strong> <input type = "date" autofocus name = "date" /></p>     
+            <p> <strong>GPA:</strong>  <input type = "text"  id = "GPA" /></p>  
+            <p> <strong>Date of birth:</strong> <input type = "date" id = "date" /></p>     
             <p>
                 <strong>Gender:</strong>
-                <input type = "radio" name = "Gender" autofocus value = "Male"> Male    
-                <input type = "radio" name = "Gender" autofocus value = "Female"> Female
+                <input type = "radio" name = "Gender" value = "Male"> Male    
+                <input type = "radio" name = "Gender" value = "Female"> Female
             </p> 
             <p> 
                 <strong>Department:</strong> 
-                <input type="radio" name="Departement" value="CS">CS
-                <input type="radio" name="Departement" value="CS">AI
-                <input type="radio" name="Departement" value="CS">IT
-                <input type="radio" name="Departement" value="CS">DS
-                <input type="radio" name="Departement" value="CS">IS
+                <input type="radio" name ="Departement" value="CS">CS
+                <input type="radio" name ="Departement" value="AI">AI
+                <input type="radio" name ="Departement" value="IT">IT
+                <input type="radio" name ="Departement" value="DS">DS
+                <input type="radio" name ="Departement" value="IS">IS
             </p>
             <p> 
                 <strong>Status:</strong>
                 <input type = "radio" name = "Status" value = "active"> active    
                 <input type = "radio" name = "Status" value = "inactive"> inactive
             </p> 
-            <p><button id = "btn" class="slBtn" value="Register">Add</button></p>             
+            <p><button class="slBtn" type="button" id="btnAdd">Add</button></p>             
         </fieldset>
         </form>
         </div>
