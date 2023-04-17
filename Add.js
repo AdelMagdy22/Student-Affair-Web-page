@@ -40,5 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem("Status1", status);
         // will romove this
         console.log(`ID: ${id}, First Name: ${firstName}, Last Name: ${lastName}, Phone: ${phone}, Email: ${email}, Level: ${level}, GPA: ${gpa}, DOB: ${dob}, Gender: ${gender}, Department: ${department}, Status: ${status}`);
+        window.location.reload(); 
     });
 });
