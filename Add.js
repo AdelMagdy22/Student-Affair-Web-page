@@ -1,33 +1,3 @@
-// const ID = document.getElementById("ID");
-// const fName = document.getElementById("fname");
-// const lName = document.getElementById("lname");
-// const Phone = document.getElementById("phone");
-// const Email = document.getElementById("email");
-// const Level = document.getElementById("Level");
-// const Gpa = document.getElementById("GPA");
-// const Gender = document.getElementById("Gender");
-// const Date = document.getElementById("date");
-// const Department = document.getElementById("Department");
-// const Status = document.getElementById("Status");
-
-// const btnAdd = document.getElementById("btnAdd");
-
-// window.onclick = function() {
-// localStorage.setItem("ID1", ID.value);
-// localStorage.setItem("fname1", fName.value);
-// localStorage.setItem("lname1", lName.value);
-// localStorage.setItem("phone1", Phone.value);
-// localStorage.setItem("email1", Email.value);
-// localStorage.setItem("level1", Level.value);
-// localStorage.setItem("Gpa1", Gpa.value);
-// localStorage.setItem("Gender1", Gender.value);
-// localStorage.setItem("Date1", Date.value);
-// localStorage.setItem("Department1", Department.value);
-// localStorage.setItem("Status1", Status.value);
-//     console.log(localStorage);
-// }
-
-
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
 
