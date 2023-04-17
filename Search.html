@@ -35,23 +35,23 @@
             <div>
                 <form>
 
-                    <input type="search" placeholder="Search" aria-label="Search" name="Search">
+                    <input type="search" placeholder="Search" aria-label="Search" id = "Search">
                     <label>By:</label>
-                    <select>
+                    <select id="select">
                         <option> Choise </option>
-                        <option id="idChoosen">ID</option>
-                        <option id="levelChoosen">Level</option>
-                        <option id="GPAChoosen">GPA</option>
-                        <option id="DepartementChoosen">Departement</option>
+                        <option name = "type" type = "select" value="ID">ID</option>
+                        <option name = "type" type = "select" value="Level">Level</option>
+                        <option name = "type" type = "select" value="GPA">GPA</option>
+                        <option name = "type" type = "select" value="Departement">Departement</option>
                     </select>
-                    <button class="slBtn" type="submit">Search</button>
+                    <button class="slBtn" type="submit" id="submit">Search</button>
 
                 </form>
             </div>
             <br> <br>
             <div>
                 <table class="centertable">
-                    <tr>
+                    <thead>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>ID</th>
@@ -62,8 +62,8 @@
                         <th>Mobile Phone</th>
                         <th>Status</th>
                         <th>Departement</th>
-                    </tr>
-                    <tr>
+                    </thead>
+                    <tbody>
                         <td>Rehab</td>
                         <td>Hany</td>
                         <td>20200845</td>
@@ -74,8 +74,8 @@
                         <td>01152081795</td>
                         <td>active</td>
                         <td>CS</td>
-                    </tr>
-                    <tr>
+                    </tbody>
+                    <tbody>
                         <td>marwa</td>
                         <td>ahmed</td>
                         <td>20201054</td>
@@ -85,9 +85,9 @@
                         <td>8/7/2001</td>
                         <td>0117935871</td>
                         <td>active</td>
-                        <td>CS</td>
-                    </tr>
-                    <tr>
+                        <td>AI</td>
+                    </tbody>
+                    <tbody>
                         <td>omima</td>
                         <td>abdo</td>
                         <td>20208912</td>
@@ -98,8 +98,8 @@
                         <td>012459355</td>
                         <td>inactive</td>
                         <td>CS</td>
-                    </tr>
-                    <tr>
+                    </tbody>
+                    <tbody>
                         <td>mina</td>
                         <td>maged</td>
                         <td>20210420</td>
@@ -110,9 +110,9 @@
                         <td>01140240229</td>
                         <td>active</td>
                         <td>-</td>
-                    </tr>
+                    </tbody>
                 </table>
             </div>
 </body>
-
+<script src="search.js"></script>
 </html>
