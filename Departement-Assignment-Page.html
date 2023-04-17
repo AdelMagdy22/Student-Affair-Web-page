@@ -4,6 +4,7 @@
 <head>
     <title>Departement Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Departement-Assignment-Page.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
                     <li><a href= "login.html">Login</a></li>
                     <li><a href="Search.html">Search</a></li>
                     <li><a href="view.html">view</a></li>
-                    <li><a href="Update.html">Update</a></li>
+                    <li><a href="UpdateHomePage.html">Update</a></li>
                     <li><a href="Add Student.html">Add_Student</a></li>
                     <li><a href="delete.html">Delete Student</a></li>
                 </ul>
@@ -32,19 +33,19 @@
             <form >
                 <fieldset>
                     <legend>student Information</legend>
-                    <p> <strong>student ID:</strong><input type = "text" name = "ID" /></p> 
-                    <p> <strong>First name:</strong> <input type = "text" name = "fname" /></p>
+                    <p> <strong>student ID:</strong><input type = "text" id = "ID" /></p> 
+                    <p> <strong>First name:</strong> <input type = "text" id = "fname" /></p>
                     <form method="post" Align="left">
                     <h3>Departement Choise:
-                    <select name="Departement">
+                    <select id="Departement">
                         <option>Departement</option>
-                        <option>CS</option>
-                        <option>IT</option>
-                        <option>IS</option>
-                        <option>AI</option>
-                        <option>DS</option>
+                        <option name ="Departement" type = "select" value="CS">CS</option>
+                        <option name ="Departement" type = "select" value="IT">IT</option>
+                        <option name ="Departement" type = "select" value="IS">IS</option>
+                        <option name ="Departement" type = "select" value="AI">AI</option>
+                        <option name ="Departement" type = "select" value="DS">DS</option>
                         <br>
-                        <input id="submit_button" type="submit" value="Submit"></a>
+                        <input id="btnDep" type="submit" value="Submit"></a>
                     </select>
                     </h3>
                 </fieldset>
