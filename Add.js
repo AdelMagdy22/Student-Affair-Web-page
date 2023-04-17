@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         students.push({
             id,
-            fname,
-            lname,
+            firstName,
+            lastName,
             phone,
             email,
             level,
