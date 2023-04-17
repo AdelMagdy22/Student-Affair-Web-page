@@ -1,6 +1,7 @@
+
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-
+    
     // Get the Add button element
     const addButton = document.querySelector('#btnAdd');
 
@@ -26,20 +27,26 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Send the data to the server-side script for processing
-        localStorage.setItem("ID1", id);
-        localStorage.setItem("fname1", firstName);
-        localStorage.setItem("lname1", lastName);
-        localStorage.setItem("phone1", phone);
-        localStorage.setItem("email1", email);
-        localStorage.setItem("level1", level);
-        localStorage.setItem("Gpa1", gpa);
-        localStorage.setItem("Gender1", gender);
-        localStorage.setItem("Date1", dob);
-        localStorage.setItem("Department1", department);
-        localStorage.setItem("Status1", status);
-        // will romove this
-        console.log(`ID: ${id}, First Name: ${firstName}, Last Name: ${lastName}, Phone: ${phone}, Email: ${email}, Level: ${level}, GPA: ${gpa}, DOB: ${dob}, Gender: ${gender}, Department: ${department}, Status: ${status}`);
-        window.location.reload(); 
+        const students = JSON.parse(localStorage.getItem("students")) || [];
+
+        students.push({
+            id,
+            fname,
+            lname,
+            phone,
+            email,
+            level,
+            gpa,
+            dob,
+            gender,
+            department,
+            status,
+        });
+
+        localStorage.setItem("students", JSON.stringify(students));
+
+        return { id,fname, lname,phone,email,level,gpa,dob,gender,department,status };
+        
+
     });
 });
