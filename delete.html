@@ -4,7 +4,9 @@
 <head>
     <title>Delete Student</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="DeletePageStyle.css">
+    <!-- <script src="main.js"></script> -->
+    <script src="deleteP.js"></script>
 </head>
 
 <body>
@@ -26,13 +28,12 @@
         </div>
         <div class="box cont">
             <br>
-            <div>
+            <!-- <div>
                 <form action="">
                     <input type="number" placeholder="Enter an ID to remove..." aria-label="Delete" id="IDdel">
                     <button class="slBtn" type="submit" id="btnDel">Delete</button>
                 </form>
-            </div>
-            <br><br>
+            </div> -->
             <table class="centertable">
                 <thead>
                     <tr>
@@ -47,10 +48,11 @@
                         <th>Mobile Phone</th>
                         <th>Status</th>
                         <th>Departement</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="TBody">
+                    <!-- <tr>
                         <td>Rehab</td>
                         <td>Hany</td>
                         <td>20200845</td>
@@ -98,7 +100,7 @@
                         <td>01140240229</td>
                         <td>active</td>
                         <td>-</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
             <br>
