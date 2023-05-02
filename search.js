@@ -1,3 +1,37 @@
+document.addEventListener('DOMContentLoaded', function () {
+    let Students;
+//if there is a data in localStorage put it in students else create an empty array
+if (localStorage.Students != null) {
+    Students = JSON.parse(localStorage.Students);
+}else{
+    Students = []; 
+}
+
+    function DisplayTable(){
+    let table = '';
+    for(let i = 0 ; i < Students.length ; i++){
+        table += `
+        <tr>
+            <td>${Students[i].firstName}</td>
+            <td>${Students[i].lastName}</td>
+            <td>${Students[i].id}</td>
+            <td>${Students[i].level}</td>
+            <td>${Students[i].gpa}</td>
+            <td>${Students[i].gender}</td>
+            <td>${Students[i].dob}</td>
+            <td>${Students[i].phone}</td>
+            <td>${Students[i].status}</td>
+            <td>${Students[i].department}</td>
+        </tr>
+        `
+    }
+    document.getElementById('TBody').innerHTML = table;
+}
+
+DisplayTable();
+
+
+
 // get references to HTML elements
 const searchForm = document.querySelector("form");
 const searchInput = document.querySelector("#Search");
@@ -36,3 +70,5 @@ searchForm.addEventListener("submit", function (event) {
         }
     }
 });
+});
+

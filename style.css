@@ -9,10 +9,34 @@ ul {
     box-sizing: border-box;
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
+table{
+    /* position: absolute;
+    left: 50%;
+    top: 50%; */
+    /* transform: translate(-40%,-40%); */
+    
+    width: 60%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+th{
+    background-color: rgb(51, 51, 53);
+    color: #fafafa;
+    font-weight: 200;
+    /* text-transform: uppercase; */   
+}
+
+td , th{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
     border-collapse: collapse;
     justify-items: center;
     align-items: center;
@@ -37,7 +61,6 @@ td {
         "sl cont cont cont cont cont"
         "sl cont cont cont cont cont"
         "sl cont cont cont cont cont"
-        "foot foot foot foot foot foot";
 }
 
 .box {
@@ -47,7 +70,7 @@ td {
 .head {
     display: grid;
     grid-area: head;
-    background-color: #31365a;
+    background-color: rgb(31 31 33);
     color: #f1f1f1;
     align-items: center;
     font-family: "Poppins", sans-serif;
@@ -72,12 +95,8 @@ td {
     grid-area: cont;
 }
 
-.footer {
-    grid-area: foot;
-}
-
 .responsiveSP {
-    background: rgb(5, 68, 104);
+    background: rgb(36 36 42);;
     position: fixed;
     left: 0;
     width: 225px;
