@@ -8,29 +8,27 @@ if (localStorage.Students != null) {
 
 window.onload = function () {
     function DisplayTable(){
-    let table = '';
-    for(let i = 0 ; i < Students.length ; i++){
-        table += `
-        <tr>
-            <td>${Students[i].firstName}</td>
-            <td>${Students[i].lastName}</td>
-            <td>${Students[i].id}</td>
-            <td>${Students[i].level}</td>
-            <td>${Students[i].gpa}</td>
-            <td>${Students[i].gender}</td>
-            <td>${Students[i].dob}</td>
-            <td>${Students[i].phone}</td>
-            <td>${Students[i].status}</td>
-            <td>${Students[i].department}</td>
-            <td><button class="slBtn" id="delete" onclick="deleteSTU(${i})">Delete</button></td> 
-        </tr>
-        `
+        let table = '';
+        for(let i = 0 ; i < Students.length ; i++){
+            table += `
+            <tr>
+                <td>${Students[i].firstName}</td>
+                <td>${Students[i].lastName}</td>
+                <td>${Students[i].id}</td>
+                <td>${Students[i].level}</td>
+                <td>${Students[i].gpa}</td>
+                <td>${Students[i].gender}</td>
+                <td>${Students[i].dob}</td>
+                <td>${Students[i].phone}</td>
+                <td>${Students[i].status}</td>
+                <td>${Students[i].department}</td>
+                <td><button class="slBtn" id="delete" onclick="deleteSTU(${i})">Delete</button></td> 
+            </tr>
+            `
+        }
+        document.getElementById('TBody').innerHTML = table;
     }
-    document.getElementById('TBody').innerHTML = table;
-}
-
-DisplayTable();
-
+    DisplayTable();
 }
 
 function deleteSTU(i){
