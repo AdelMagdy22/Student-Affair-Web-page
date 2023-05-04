@@ -5,6 +5,9 @@
     <title>Student-Registre</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="UpdateInfo.js"></script>
+</head>
+<body>
     <div class="container">
         <div class="box head">Update Page</div>
         <div class="box sl">
@@ -32,23 +35,28 @@
                 <form>
                     <fieldset>
                         <legend>Student Information:</legend>
-                        <p style="text-align: start;width: 100px;height: 20px;border: solid 2px; margin: 0px; padding-left: 2px;">ID: 20210420</p>
-                        <p>First name: <input type="text" id="editName" readonly = 'true'/><button class="fa fa-pen-to-square" id="editBtnFname"></button></p>
-                        <p>Last name: <input type="text"/><button class="fa fa-pen-to-square"></button></p>
-                        <p>Phone Number: <input type="text" /><button class="fa fa-pen-to-square"></button></p>
-                        <p><i class="fa-solid fa-envelope"></i> <input type="text" /><button class="fa fa-pen-to-square"></button></p>
+                        <p>First name: <input type="text" id="editName"/><button class="fa fa-pen-to-square" id="editBtnFname"></button></p>
+                        <p id="VFN"></p>
+                        <p>Last name: <input type="text" id="editLN"/><button class="fa fa-pen-to-square"></button></p>
+                        <p id="VLN"></p>
+                        <p>Phone Number: <input type="text" id="editPHN" /><button class="fa fa-pen-to-square"></button></p>
+                        <p id="PHN"></p>
+                        <p><i class="fa-solid fa-envelope"></i> <input type="text" id="editEmail"/><button class="fa fa-pen-to-square"></button></p>
+                        <p id="VEML"></p>
                         <p>Level:
-                            <select>
+                            <select id="Level">
                                 <option> Choise </option>
-                                <option> level 1 </option>
-                                <option> level 2 </option>
-                                <option> level 3 </option>
-                                <option> level 4 </option>
+                                <option id="a" name ="Level"> level 1 </option>
+                                <option id="b" name ="Level"> level 2 </option>
+                                <option id="c" name ="Level"> level 3 </option>
+                                <option id="d" name ="Level"> level 4 </option>
                             </select>
                         </p>
-                        <p> GPA: <input type="text" name="GPA"/><button class="fa fa-pen-to-square"></button></p>
-                        <p> Date of birth: <input type="date" name="date"/>
+                        <p> GPA: <input type="text" name="GPA" id="editGPA"/><button class="fa fa-pen-to-square"></button></p>
+                        <p id="VGPA"></p>
+                        <p> Date of birth: <input type="date" name="date" id="editDOB"/>
                             <button class="fa fa-pen-to-square"></button></p>
+                        <p id="VDOB"></p>  
                         <br>
                         <label>
                             <tr>
@@ -63,12 +71,12 @@
                         <br> <br>
                         <p>
                             Status:
-                            <input type="radio" name="Status" value="active"> active
-                            <input type="radio" name="Status" value="inactive"> inactive
+                            <input type="radio" name="Status" value="active" id="act"> active
+                            <input type="radio" name="Status" value="inactive" id="inact"> inactive
                         </p>
 
-                        <button class="slBtn" value="Register">Update</button>
-                        <button class="slBtn">delete</button>
+                        <button class="slBtn" value="Register" id="updateBtn">Update</button>
+                        <!-- <button class="slBtn">delete</button> -->
                     </fieldset>
                 </form>
         </div>

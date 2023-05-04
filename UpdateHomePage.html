@@ -4,6 +4,7 @@
 <head>
     <title>Student-Registre</title>
     <link rel="stylesheet" href="style.css">
+    <script src="udpateHome.js"></script>
 </head>
 
 <body>
@@ -33,10 +34,10 @@
                 <form>
                     <fieldset>
                         <legend>Student Information:</legend>
-                        <p>student ID: <input type="text" placeholder="Enter your ID..."/></p>
-                        <a href="UpdateInfo.html">
-                            <button class="slBtn" type="button" value="Register">Edit</button>
-                        </a>
+                        <p>student ID: <input id= "inputid" type="text" placeholder="Enter your ID..." /></p>
+                        <!-- <a href="UpdateInfo.html"> -->
+                        <button id="editButton" class="slBtn" type="button" value="Register" >Edit</button>
+                        <!-- </a> -->
                     </fieldset>
                 </form>
         </div>
@@ -44,3 +45,5 @@
 </body>
 
 </html>
+
+<!-- onclick="nextpage("inputid") " -->
