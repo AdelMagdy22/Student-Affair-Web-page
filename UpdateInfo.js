@@ -1,4 +1,3 @@
-console.log("mina");
 let students;
 if (localStorage.Students != null){
     students = JSON.parse(localStorage.Students);
@@ -26,7 +25,7 @@ function validateEgyptianNumber(number) {
     if(number.length == 0){
         return false;
     }
-    const validPrefixes = ['010', '011', '012'];
+    const validPrefixes = ['010', '011', '012', '015'];
     let digitsOnly = '';
     for (let i = 0; i < number.length; i++) {
         const charCode = number.charCodeAt(i);
@@ -174,18 +173,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     let ch = students[indx].level;
-    console.log(ch);
     const ch1 = document.getElementById("a");
     const ch2 = document.getElementById("b");
     const ch3 = document.getElementById("c");
     const ch4 = document.getElementById("d");
-    if (ch == "level 1") {
+    if (ch == "1") {
         ch1.setAttribute("selected","");
-    }else if(ch == "level 2"){
+    }else if(ch == "2"){
         ch2.setAttribute("selected","");
-    }else if(ch == "level 3"){
+    }else if(ch == "3"){
         ch3.setAttribute("selected","");
-    }else{
+    }else if(ch == "4"){
         ch4.setAttribute("selected" ,"");
     }
     let status = students[indx].status;
@@ -222,4 +220,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
