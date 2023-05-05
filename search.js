@@ -51,8 +51,8 @@ searchForm.addEventListener("submit", function (event) {
     // iterate over each row in the table
     for (let i = 1; i < rows.length; i++) {
         // retrieve the values for the current row
-        const level = rows[i].cells[3].textContent.toLowerCase();
-        const gpa = rows[i].cells[4].textContent.toLowerCase();
+        const level = rows[i].cells[3].textContent;
+        const gpa = rows[i].cells[4].textContent;
         const department = rows[i].cells[9].textContent.toUpperCase();
         const id = rows[i].querySelectorAll("td")[2].textContent;
 
@@ -61,9 +61,9 @@ searchForm.addEventListener("submit", function (event) {
             rows[i].style.display = "";
         } else if (searchType === "Level" && level.includes(searchValue)) {
             rows[i].style.display = "";
-        } else if (searchType === "GPA" && gpa.includes(searchValue)) {
+        } else if (searchType === "GPA" && gpa.includes(parseFloat(searchValue).toFixed(2))) {
             rows[i].style.display = "";
-        } else if (searchType === "Departement" && department.includes(searchValue)) {
+        } else if (searchType === "Departement" && department.includes(searchValue.toUpperCase())) {
             rows[i].style.display = "";
         } else {
             rows[i].style.display = "none";
