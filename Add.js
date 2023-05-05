@@ -37,7 +37,7 @@ function validateChars(str) {
 }
 
 function validateEgyptianNumber(number) {
-    const validPrefixes = ['010', '011', '012'];
+    const validPrefixes = ['010', '011', '012', '015'];
     let digitsOnly = '';
     for (let i = 0; i < number.length; i++) {
         const charCode = number.charCodeAt(i);
@@ -229,4 +229,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
