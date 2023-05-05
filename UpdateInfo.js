@@ -106,6 +106,8 @@ function validateDateOfBirth(date) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    const ID = document.querySelector("#ID");
+    ID.setAttribute("value", students[indx].id);
     const EditName = document.querySelector('#editName');
     EditName.setAttribute("value",students[indx].firstName);
     const errorMessageFN = document.getElementById('VFN');
