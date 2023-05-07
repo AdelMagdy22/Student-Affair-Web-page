@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 location.href = "view.html";
         }
         else{
-            alert("Id not found");
+            alert("Id or name not founded");
         }
     });
 });
