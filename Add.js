@@ -110,6 +110,8 @@ function validateDateOfBirth(date) {
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
+    const DepartementFeild = document.getElementById('Departement');
+    DepartementFeild.style.display = "none";
     const inputFieldID = document.getElementById('ID');
     const errorMessageID = document.getElementById('VID');
     inputFieldID.addEventListener('blur', () => {
@@ -151,6 +153,22 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             errorMessagePHN.textContent = '';
         }
+    });
+    const L1 = document.getElementById("L");
+    const L2 = document.getElementById("LL");
+    const L3 = document.getElementById("LLL");
+    const L4 = document.getElementById("LLLL");
+    L1.addEventListener("change", () => {
+        DepartementFeild.style.display = "none";
+    });
+    L2.addEventListener("change", () => {
+        DepartementFeild.style.display = "none";
+    });
+    L3.addEventListener("change", () => {
+        DepartementFeild.style.display = "";
+    });
+    L4.addEventListener("change", () => {
+        DepartementFeild.style.display = "";
     });
     const inputFieldGPA = document.getElementById('GPA');
     const errorMessageGPA = document.getElementById('VGPA');
@@ -197,10 +215,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const gpa = document.querySelector('#GPA').value;
         const dob = document.querySelector('#date').value;
         const gender = document.querySelector('input[name="Gender"]:checked').value;
-        const department = document.querySelector('input[name="Departement"]:checked').value;
+        const department = document.querySelector('input[name="Departement"]:checked');
+        if (department) { // Check if myInput is defined
+            var departmentValue = department.value;
+        }else{
+            departmentValue = "NULL";
+        }
+        console.log(department);
         const status = document.querySelector('input[name="Status"]:checked').value;
         // Validate the input fields
-        if (id === '' || firstName === '' || lastName === '' || phone === '' || email === '' || level === '' || gpa === '' || dob === '' || gender === '' || department === '' || status === '') {
+        if (id === '' || firstName === '' || lastName === '' || phone === '' || email === '' || level === '' || gpa === '' || dob === '' || gender === '' || status === '') {
             alert('Please fill in all fields.');
             return;
         }
@@ -217,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 gpa : gpa,
                 dob : dob,
                 gender : gender,
-                department : department,
+                department : departmentValue,
                 status : status,
             }
             Students.push(Student);
