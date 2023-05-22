@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="english">
-
-<head>
-    <title>Add student</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="Add.js"></script>
-</head>
-<body>
-    <div class="container">    
-        <div class="box head">Add Student Page</div>
-        <div class="box sl">
-            <nav class="responsiveSP">
-                <ul>
-                    <li><a href="main page.html">Home</a></li>
-                    <li><a href= "MyTutorial Page.html">Tutorial</a></li>
-                    <li><a href= "login.html">Login</a></li>
-                    <li><a href="Search.html">Search</a></li>
-                    <li><a href="view.html">view</a></li>
-                    <li><a href="UpdateHomePage.html">Update</a></li>
-                    <li><a href="delete.html">Delete Student</a></li>
-                </ul>
-            </nav>
-        </div> 
-        <div class="box cont" style="margin-inline-start: 40px;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+          initial-scale=1.0">
+        <title>Delete Page</title>
+       <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          />
+          
+        <link rel="stylesheet" href="css/nav.css"/>
+        <link rel="stylesheet" href="css/table.css"/>
+        <link rel="stylesheet" href="css/HeadPageStyle.css"/>
+        <link rel="stylesheet" href="css/ButtonStyle.css"/>
+        <link rel="stylesheet" href="css/manPageStyle.css"/>
+        <script defer src="JS/mainpage.js"></script>
+        <script defer src="JS/nav.js"></script>
+        <script defer src="JS/Add.js"></script>
+      
+      </head>
+      <body>
+        <nav>
+          <button type="button" id="toggle-btn">
+            <i class="fa fa-bars"></i>
+          </button>
+          <span>Menu</span>
+          <ul class="sidebar-menu">
+            <li><a href="main page.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="MyTutorial Page.html"><i class="fa fa-book"></i>Tutorial</a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i>Login</a></li>
+            <li><a href="Search.html"><i class="fa fa-search"></i>Search</a></li>
+            <li><a href="view.html"><i class="fas fa-eye"></i>view</a></li>
+            <li><a href="UpdateHomePage.html"><i class="fas fa-edit"></i>Update</a></li>
+            <li><a href="Add Student.html"><i class="fas fa-user-plus"></i>Add Student</a></li>
+            <li><a href="delete.html"><i class="fas fa-user-minus"></i>Delete Student</a></li>
+            <li id="bgModeBtn"><a href="#"><i id="bgModeIcon" class="fa fa-sun"></i>Mode</a></li>
+          </ul>
+        </nav>
+      
+        <div class="head">Add Student Page</div>
+        <div class="content">
             <br>
             <h1>Add Student:</h1>
-            <form>
-            <fieldset>
-            <legend>Details For Each Student</legend>
-            <p> <strong>Student ID:</strong> <input type = "text" id = "ID" placeholder="Enter ID"/></p>
-            <p id="VID"></p> 
-            <p> <strong>First name:</strong> <input type = "text"  id = "fname" placeholder="Enter First name"/></p>
-            <p id="VFN"></p>
-            <p> <strong>Last name:</strong> <input type = "text" id = "lname" placeholder="Enter Last name"/></p>  
-            <p id="VLN"></p>
-            <p> <strong>Phone Number:</strong> <input type = "text" id = "phone" placeholder="Enter Phone Number"/></p>
-            <p id="PHN"></p>
-            <p><i class="fa-solid fa-envelope"></i> <input type = "email" id = "email" placeholder="Enter Email" /></p> 
-            <p id="VEML"></p>
-            <p>
-                <strong>Level:</strong>
-                <input type="radio" name ="Level" value="1" id="L">Level 1
-                <input type="radio" name ="Level" value="2" id="LL">Level 2
-                <input type="radio" name ="Level" value="3" id="LLL">Level 3
-                <input type="radio" name ="Level" value="4" id="LLLL">Level 4
-            </p>
-            <p> <strong>GPA:</strong>  <input type = "text"  id = "GPA" placeholder="Enter GPA"/></p>
-            <p id="VGPA"></p>
-            <p> <strong>Date of birth:</strong> <input type = "date" id = "date"  /></p>
-            <p id="VDOB"></p>     
-            <p>
-                <strong>Gender:</strong>
-                <input type = "radio" name = "Gender" value = "Male"> Male    
-                <input type = "radio" name = "Gender" value = "Female"> Female
-            </p> 
-            <p id="Departement"> 
-                <strong>Department:</strong> 
-                <input type="radio" name ="Departement" value="CS">CS
-                <input type="radio" name ="Departement" value="AI">AI
-                <input type="radio" name ="Departement" value="IT">IT
-                <input type="radio" name ="Departement" value="DS">DS
-                <input type="radio" name ="Departement" value="IS">IS
-            </p>
-            <p> 
-                <strong>Status:</strong>
-                <input type = "radio" name = "Status" value = "active"> active    
-                <input type = "radio" name = "Status" value = "inactive"> inactive
-            </p> 
-            <p><button class="slBtn" type="button" id="btnAdd">Add</button></p>             
-        </fieldset>
-        </form>
+            <div class="marginedited">
+                <form>
+                    <fieldset>
+                    <legend>Details For Each Student</legend>
+                    <p> <strong>Student ID:</strong> <input type = "text" id = "ID" placeholder="Enter ID"/></p>
+                    <p id="VID"></p><br> 
+                    <p> <strong>First name:</strong> <input type = "text"  id = "fname" placeholder="Enter First name"/></p>
+                    <p id="VFN"></p><br>
+                    <p> <strong>Last name:</strong> <input type = "text" id = "lname" placeholder="Enter Last name"/></p>  
+                    <p id="VLN"></p><br>
+                    <p> <strong>Phone Number:</strong> <input type = "text" id = "phone" placeholder="Enter Phone Number"/></p>
+                    <p id="PHN"></p><br>
+                    <p><i class="fa-solid fa-envelope"></i> <input type = "email" id = "email" placeholder="Enter Email" /></p> 
+                    <p id="VEML"></p><br>
+                    <p>
+                        <strong>Level:</strong>
+                        <input type="radio" name ="Level" value="1" id="L">Level 1
+                        <input type="radio" name ="Level" value="2" id="LL">Level 2
+                        <input type="radio" name ="Level" value="3" id="LLL">Level 3
+                        <input type="radio" name ="Level" value="4" id="LLLL">Level 4
+                    </p><br>
+                    <p> <strong>GPA:</strong>  <input type = "text"  id = "GPA" placeholder="Enter GPA"/></p>
+                    <p id="VGPA"></p><br>
+                    <p> <strong>Date of birth:</strong> <input type = "date" id = "date"  /></p>
+                    <p id="VDOB"></p><br>     
+                    <p>
+                        <strong>Gender:</strong>
+                        <input type = "radio" name = "Gender" value = "Male"> Male    
+                        <input type = "radio" name = "Gender" value = "Female"> Female
+                    </p> 
+                    <p id="Departement"> 
+                        <strong>Department:</strong> 
+                        <input type="radio" name ="Departement" value="CS">CS
+                        <input type="radio" name ="Departement" value="AI">AI
+                        <input type="radio" name ="Departement" value="IT">IT
+                        <input type="radio" name ="Departement" value="DS">DS
+                        <input type="radio" name ="Departement" value="IS">IS
+                    </p><br>
+                    <p> 
+                        <strong>Status:</strong>
+                        <input type = "radio" name = "Status" value = "active"> active    
+                        <input type = "radio" name = "Status" value = "inactive"> inactive
+                    </p> <br>
+                    <p><button class="slBtn" type="button" id="btnAdd">Add</button></p>             
+                </fieldset>
+                </form>
+            </div> 
         </div>
-    </div>
 </body>
 </html>

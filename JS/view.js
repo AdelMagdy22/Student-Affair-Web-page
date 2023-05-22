@@ -7,6 +7,14 @@ if (localStorage.Students != null) {
 }
 
 
+
+// toggle_btn.onclick = function() {
+//     nav.classList.toggle('hide');
+//     smallTap.classList.toggle('expand');
+//     // content.classList.toggle('expand');
+//     // divcon.classList.toggle('expand');
+// };
+
 // Wait for the document to load before attaching event listeners
 document.addEventListener('DOMContentLoaded', function () {
 
