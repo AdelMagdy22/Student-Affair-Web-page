@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html lang="english">
-
-<head>
-    <title>Student-Registre</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="UpdateInfo.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="box head">Update Page</div>
-        <div class="box sl">
-            <nav class="responsiveSP">
-                <ul>
-                    <li><a href="main page.html">Home</a></li>
-                    <li><a href="MyTutorial Page.html">Tutorial</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="Search.html">Search</a></li>
-                    <li><a href="view.html">view</a></li>
-                    <li><a href="Add Student.html">Add_Student</a></li>
-                    <li><a href="UpdateHomePage.html">Update</a></li>
-                    <li><a href="delete.html">Delete Student</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="box cont" style="margin-inline-start: 20px;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+          initial-scale=1.0">
+        <title>Delete Page</title>
+       <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          />
+          
+        <link rel="stylesheet" href="css/nav.css"/>
+        <link rel="stylesheet" href="css/table.css"/>
+        <link rel="stylesheet" href="css/HeadPageStyle.css"/>
+        <link rel="stylesheet" href="css/ButtonStyle.css"/>
+        <link rel="stylesheet" href="css/manPageStyle.css"/>
+        <script defer src="JS/mainpage.js"></script>
+        <script defer src="JS/nav.js"></script>
+        <script defer src="JS/UpdateInfo.js"></script>
+      
+      </head>
+      <body>
+        <nav>
+          <button type="button" id="toggle-btn">
+            <i class="fa fa-bars"></i>
+          </button>
+          <span>Menu</span>
+          <ul class="sidebar-menu">
+            <li><a href="main page.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="MyTutorial Page.html"><i class="fa fa-book"></i>Tutorial</a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i>Login</a></li>
+            <li><a href="Search.html"><i class="fa fa-search"></i>Search</a></li>
+            <li><a href="view.html"><i class="fas fa-eye"></i>view</a></li>
+            <li><a href="UpdateHomePage.html"><i class="fas fa-edit"></i>Update</a></li>
+            <li><a href="Add Student.html"><i class="fas fa-user-plus"></i>Add Student</a></li>
+            <li><a href="delete.html"><i class="fas fa-user-minus"></i>Delete Student</a></li>
+            <li id="bgModeBtn"><a href="#"><i id="bgModeIcon" class="fa fa-sun"></i>Mode</a></li>
+          </ul>
+        </nav>
+      
+        <div class="head">Update Home Page</div>
+    <div class="content">
             <br>
             <h1>
-                <br>
                 FCAI-Student-Update :
             </h1>
-            <form method="post">
-                <form>
-                    <fieldset>
-                        <legend>Student Information:</legend>
-                        <p style="text-align: left;">ID:<input type="text" id="ID" style="border: 0px; background-color: white; color: black;" readonly></p>
-                        <p>First name: <input type="text" id="editName"/></p>
-                        <p id="VFN"></p>
-                        <p>Last name: <input type="text" id="editLN"/></p>
-                        <p id="VLN"></p>
-                        <p>Phone Number: <input type="text" id="editPHN" /></p>
-                        <p id="PHN"></p>
-                        <p><i class="fa-solid fa-envelope"></i> <input type="text" id="editEmail"/></p>
-                        <p id="VEML"></p>
-                        <p>Level:
-                            <select id="Level">
-                                <option> Choise </option>
-                                <option id="a" name ="Level" value="1"> level 1 </option>
-                                <option id="b" name ="Level" value="2"> level 2 </option>
-                                <option id="c" name ="Level" value="3"> level 3 </option>
-                                <option id="d" name ="Level" value="4"> level 4 </option>
-                            </select>
-                        </p>
-                        <p> GPA: <input type="text" name="GPA" id="editGPA"/></p>
-                        <p id="VGPA"></p>
-                        <p> Date of birth: <input type="date" name="date" id="editDOB"/></p>
-                        <p id="VDOB"></p>  
-                        <br>
-                        <label>
-                            <tr>
-                                <td>
-                                    <select style="font-size: 15px; background-color:rgb(51, 51, 53);">
-                                        <option> Department</option>
-                                    </select>
-                                </td>
-                                <label style="color: rgb(0, 0, 0);"> (Can-not-Update-this-field)</label>
-                            </tr>
-                        </label>
-                        <br> <br>
-                        <p>
-                            Status:
-                            <input type="radio" name="Status" value="active" id="act"> active
-                            <input type="radio" name="Status" value="inactive" id="inact"> inactive
-                        </p>
-
-                        <button class="slBtn" value="Register" id="updateBtn">Update</button>
-                    </fieldset>
-                </form>
-        </div>
+            <div class="marginedited">
+                <form method="post">
+                        <fieldset>
+                            <legend>Student Information:</legend>
+                            <p style="text-align: left;">ID:<input type="text" id="ID" style="border: 0px; background-color: white; color: black;" readonly></p>
+                            <br>
+                            <p>First name: <input type="text" id="editName"/></p>
+                            <p id="VFN"></p><br>
+                            <p>Last name: <input type="text" id="editLN"/></p>
+                            <p id="VLN"></p><br>
+                            <p>Phone Number: <input type="text" id="editPHN" /></p>
+                            <p id="PHN"></p><br>
+                            <p><i class="fa-solid fa-envelope"></i> <input type="text" id="editEmail"/></p>
+                            <p id="VEML"></p><br>
+                            <p>Level:
+                                <select id="Level">
+                                    <option> Choise </option>
+                                    <option id="a" name ="Level" value="1"> level 1 </option>
+                                    <option id="b" name ="Level" value="2"> level 2 </option>
+                                    <option id="c" name ="Level" value="3"> level 3 </option>
+                                    <option id="d" name ="Level" value="4"> level 4 </option>
+                                </select>
+                            </p><br>
+                            <p> GPA: <input type="text" name="GPA" id="editGPA"/></p>
+                            <p id="VGPA"></p><br>
+                            <p> Date of birth: <input type="date" name="date" id="editDOB"/></p>
+                            <p id="VDOB"></p>  <br>
+                            <br>
+                            <label>
+                                <tr>
+                                    <td>
+                                        <select style="font-size: 15px; background-color:rgb(51, 51, 53);">
+                                            <option> Department</option>
+                                        </select>
+                                    </td>
+                                    <label style="color: rgb(0, 0, 0);"> (Can-not-Update-this-field)</label>
+                                </tr>
+                            </label>
+                            <br> <br>
+                            <p>
+                                Status:
+                                <input type="radio" name="Status" value="active" id="act"> active
+                                <input type="radio" name="Status" value="inactive" id="inact"> inactive
+                            </p><br>
+    
+                            <button class="slBtn" value="Register" id="updateBtn">Update</button>
+                        </fieldset>
+                    </form>
+            </div>
+            
     </div>
     </body>
 </html>
